@@ -1,0 +1,19 @@
+{
+  "name": "elior",
+  "version": "1.0.0",
+  "description": "a website about candles w/ different fragrances",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haidarezio1/DD.git"
+  },
+  "author": "H&R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haidarezio1/DD/issues"
+  },
+  "homepage": "https://github.com/haidarezio1/DD#readme"
+}
