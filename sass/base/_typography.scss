@@ -1,0 +1,26 @@
+.header {
+  &__logo--text {
+    font-family: "Antic didone";
+    font-size: 3rem;
+  }
+
+  &__text--main {
+    font-family: "Raleway";
+    font-size: 15rem;
+  }
+  &__text--sub {
+    font-family: "simplifica";
+    font-size: 5rem;
+    &2 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+  &__list {
+    list-style: none;
+    &--elem {
+      font-family: "Antic didone";
+      font-size: 2rem;
+    }
+  }
+}

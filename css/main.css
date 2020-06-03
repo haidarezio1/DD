@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "helvetica";
+  src: url("../fonts/Hevetica 400.ttf");
+  font-family: "simplifica";
+  src: url("../fonts/SIMPLIFICA Typeface.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +21,82 @@ html {
   font-size: 62.5%;
 }
 
+.header__logo--text {
+  font-family: "Antic didone";
+  font-size: 3rem;
+}
+
+.header__text--main {
+  font-family: "Raleway";
+  font-size: 15rem;
+}
+
+.header__text--sub {
+  font-family: "simplifica";
+  font-size: 5rem;
+}
+
+.header__text--sub2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.header__list {
+  list-style: none;
+}
+
+.header__list--elem {
+  font-family: "Antic didone";
+  font-size: 2rem;
+}
+
 .header {
-  height: 80vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../public/img/1.jpeg), url(../public/img/2.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left, right;
+  background-color: #ffe9c5;
+  height: 100vh;
+  border: 3px solid red;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 2.5rem;
+  left: 4rem;
+}
+
+.header__nav--box {
+  position: absolute;
+  top: 2.5rem;
+  right: 6rem;
+}
+
+.header__text-box {
+  text-align: left;
+}
+
+.header__text--main {
+  margin-left: -1.4rem;
+}
+
+.header__text--sub2 {
+  margin-top: 2rem;
+}
+
+.header__image {
+  height: 100%;
+}
+
+.header__image--box {
+  height: 75%;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__list--elem {
+  padding: 0 2rem;
 }

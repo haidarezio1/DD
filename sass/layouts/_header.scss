@@ -1,12 +1,45 @@
 .header {
-  height: 80vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../public/img/1.jpeg), url(../public/img/2.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left, right;
+  background-color: #ffe9c5;
+  height: 100vh;
+  border: 3px solid red;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  &__logo-box {
+    position: absolute;
+    top: 2.5rem;
+    left: 4rem;
+  }
+  &__nav--box {
+    position: absolute;
+    top: 2.5rem;
+    right: 6rem;
+  }
+  &__text-box {
+    text-align: left;
+  }
+  &__text--main {
+    margin-left: -1.4rem;
+  }
+  &__text--sub2 {
+    margin-top: 2rem;
+  }
+
+  &__image {
+    height: 100%;
+    &--box {
+      height: 75%;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    &--elem {
+      padding: 0 2rem;
+    }
+  }
 }

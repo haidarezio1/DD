@@ -5,6 +5,13 @@ $bp-medium: 56.25em; // 900px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
+@font-face {
+  font-family: "helvetica";
+  src: url("../fonts/Hevetica 400.ttf");
+  font-family: "simplifica";
+  src: url("../fonts/SIMPLIFICA Typeface.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
