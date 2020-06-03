@@ -1,3 +1,83 @@
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  font-family: "Lato";
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  margin: 1.5rem;
+  padding: 1.5rem 3rem;
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  backface-visibility: hidden;
+}
+
+.btn:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  background-color: #debab8;
+  color: black;
+}
+
+.header__nav {
+  position: absolute;
+  top: 2.9rem;
+  right: 3rem;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  letter-spacing: 0.5rem;
+}
+
+.header__list--elem {
+  margin: 0 2rem;
+  position: relative;
+}
+
+.header__list--elem::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #deb8b8;
+  border-radius: 2px;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+}
+
+.header__list--elem:hover::before {
+  transform: scaleY(1);
+  height: 100%;
+}
+
+.header__list--elem--link:link, .header__list--elem--link:visited {
+  position: relative;
+  z-index: 10;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 0.12rem;
+  margin: 0 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.header__list--elem--link:link:hover, .header__list--elem--link:visited:hover {
+  color: white;
+}
+
 @font-face {
   font-family: "helvetica";
   src: url("../fonts/Hevetica 400.ttf");
@@ -22,21 +102,25 @@ html {
 }
 
 .header__logo--text {
-  font-family: "Antic didone";
+  font-family: "Antic didone", sans-serif;
   font-size: 3rem;
 }
 
 .header__text--main {
-  font-family: "Raleway";
+  font-family: "Antic didone", sans-serif;
   font-size: 15rem;
+  text-transform: uppercase;
 }
 
 .header__text--sub {
-  font-family: "simplifica";
+  font-family: "simplifica", sans-serif;
   font-size: 5rem;
+  letter-spacing: 1.7rem;
 }
 
 .header__text--sub2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -46,14 +130,13 @@ html {
 }
 
 .header__list--elem {
-  font-family: "Antic didone";
+  font-family: "Antic didone", sans-serif;
   font-size: 2rem;
 }
 
 .header {
-  background-color: #ffe9c5;
+  background-color: #ffffff;
   height: 100vh;
-  border: 3px solid red;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -67,18 +150,15 @@ html {
   left: 4rem;
 }
 
-.header__nav--box {
-  position: absolute;
-  top: 2.5rem;
-  right: 6rem;
-}
-
 .header__text-box {
+  width: 40%;
   text-align: left;
+  margin-left: 3rem;
+  overflow-wrap: break-word;
 }
 
 .header__text--main {
-  margin-left: -1.4rem;
+  margin-left: -1.5rem;
 }
 
 .header__text--sub2 {
@@ -90,13 +170,6 @@ html {
 }
 
 .header__image--box {
-  height: 75%;
-}
-
-.header__list {
-  display: flex;
-}
-
-.header__list--elem {
-  padding: 0 2rem;
+  height: 60%;
+  justify-self: flex-end;
 }

@@ -1,0 +1,28 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    // ?  always when using an ancho tag use inline-block
+    display: inline-block;
+    font-family: "Lato";
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin: 1.5rem;
+    padding: 1.5rem 3rem;
+    border-radius: 10rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+  }
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.5rem 2rem rgba(black, 0.2);
+  }
+  &--white {
+    background-color: #debab8;
+    color: black;
+  }
+}
