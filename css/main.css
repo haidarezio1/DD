@@ -4,7 +4,7 @@
   font-size: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: rgba(0, 0, 0, 0.5);
   margin: 1.5rem;
   padding: 1.5rem 3rem;
   border-radius: 10rem;
@@ -16,18 +16,12 @@
 
 .btn:hover {
   transform: translateY(-0.2rem);
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 2rem rgba(222, 197, 184, 0.5);
 }
 
 .btn--white {
-  background-color: #debab8;
+  background-color: #dec5b8;
   color: black;
-}
-
-.header__nav {
-  position: absolute;
-  top: 2.9rem;
-  right: 3rem;
 }
 
 .header__list {
@@ -35,11 +29,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   letter-spacing: 0.5rem;
+  text-shadow: 0 0.5rem 2rem #dec5b8;
 }
 
 .header__list--elem {
-  margin: 0 2rem;
   position: relative;
+  margin: 0 1rem;
 }
 
 .header__list--elem::before {
@@ -49,7 +44,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #deb8b8;
+  background-color: #dec5b8;
   border-radius: 2px;
   transform: scaleY(0);
   transform-origin: bottom;
@@ -64,18 +59,17 @@
 .header__list--elem--link:link, .header__list--elem--link:visited {
   position: relative;
   z-index: 10;
-  color: black;
+  color: white;
   text-decoration: none;
   text-align: center;
-  padding: 0 0.12rem;
-  margin: 0 1.2rem;
+  padding: 0 2rem;
   cursor: pointer;
   transition: all 0.2s;
   border: 2px solid transparent;
 }
 
 .header__list--elem--link:link:hover, .header__list--elem--link:visited:hover {
-  color: white;
+  color: black;
 }
 
 @font-face {
@@ -107,19 +101,19 @@ html {
 }
 
 .header__text--main {
-  font-family: "Antic didone", sans-serif;
+  font-family: "Antic didone", "helvetica", sans-serif;
   font-size: 15rem;
   text-transform: uppercase;
 }
 
 .header__text--sub {
-  font-family: "simplifica", sans-serif;
+  font-family: "simplifica", "helvetica", sans-serif;
   font-size: 5rem;
   letter-spacing: 1.7rem;
 }
 
 .header__text--sub2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", "helvetica", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -129,18 +123,19 @@ html {
   list-style: none;
 }
 
-.header__list--elem {
-  font-family: "Antic didone", sans-serif;
+.header__list--elem--link {
+  font-family: "Antic didone", "helvetica", sans-serif;
   font-size: 2rem;
 }
 
 .header {
-  background-color: #ffffff;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../public/img/101.jpg);
+  background-repeat: repeat;
   height: 100vh;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -150,19 +145,48 @@ html {
   left: 4rem;
 }
 
+.header__logo--text {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 .header__text-box {
-  width: 40%;
-  text-align: left;
-  margin-left: 3rem;
-  overflow-wrap: break-word;
+  flex: 0 0 40rem;
+  display: inline-flex;
+  margin-top: 3rem;
+  padding: 2rem;
+  flex-direction: column;
+  color: whitesmoke;
+  user-select: none;
 }
 
 .header__text--main {
-  margin-left: -1.5rem;
+  position: relative;
+}
+
+.header__text--main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2.5rem;
+  height: 2px;
+  border-radius: 50rem;
+  width: 90%;
+  background-color: black;
+}
+
+.header__text--sub {
+  margin-top: 2rem;
+  padding-left: 1.2rem;
 }
 
 .header__text--sub2 {
   margin-top: 2rem;
+}
+
+.header__btn {
+  display: flex;
+  justify-content: center;
 }
 
 .header__image {
@@ -171,5 +195,10 @@ html {
 
 .header__image--box {
   height: 60%;
-  justify-self: flex-end;
+}
+
+.header__nav {
+  position: absolute;
+  top: 2.9rem;
+  right: 3rem;
 }

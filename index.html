@@ -12,43 +12,51 @@
     <title>Elior</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__logo-box">
-        <h1 class="header__logo--text">Elior</h1>
+        <a href="#home" class="header__logo--text"><b>Elior</b> </a>
       </div>
       <div class="header__text-box">
         <span class="header__text--main">Elior's</span>
-        <br />
         <span class="header__text--sub">Scented Candles</span>
-        <p class="header__text--sub2">
+        <!-- <p class="header__text--sub2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
           placeat hic! Quaerat, fuga vero eligendi aliquid, aspernatur harum non
           iusto rem accusantium animi voluptate expedita ut earum quod!
           Provident, soluta.
-        </p>
-        <a href="#" class="btn btn--white heading__btn">Check out Candles !</a>
+        </p> -->
+        <div class="header__btn">
+          <a href="#" class="btn btn--white">
+            <b>Check out Candles !</b>
+          </a>
+        </div>
       </div>
       <div class="heading__button"></div>
-      <div class="header__image--box">
-        <img src="../DD/public/img/2.jpeg" alt="" class="header__image" />
-      </div>
+      <!-- <div class="header__image--box">
+        <img src="../DD/public/img/6.jpeg" alt="" class="header__image" />
+      </div> -->
       <div class="header__nav">
         <ul class="header__list">
           <li class="header__list--elem">
-            <a href="#" class="header__list--elem--link"><b>Home</b> </a>
+            <a href="#home" class="header__list--elem--link"><b>Home</b> </a>
           </li>
           <li class="header__list--elem">
-            <a href="#" class="header__list--elem--link"><b>Products</b></a>
+            <a href="#products" class="header__list--elem--link"
+              ><b>Products</b></a
+            >
           </li>
           <li class="header__list--elem">
-            <a href="#" class="header__list--elem--link"><b>About Us</b></a>
+            <a href="#aboutus" class="header__list--elem--link"
+              ><b>About Us</b></a
+            >
           </li>
         </ul>
       </div>
+      <div></div>
     </header>
     <main>
-      <section class="products"></section>
-      <section></section>
+      <section class="products" id="#products"></section>
+      <section class="aboutus" id="#aboutus"></section>
     </main>
     <footer></footer>
   </body>

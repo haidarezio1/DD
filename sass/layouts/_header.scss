@@ -1,10 +1,16 @@
 .header {
-  background-color: #ffffff;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(black, 0.8),
+      rgba(black, 0.8)
+    ),
+    url(../public/img/101.jpg);
+  background-repeat: repeat;
   height: 100vh;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   &__logo-box {
@@ -12,18 +18,45 @@
     top: 2.5rem;
     left: 4rem;
   }
+  &__logo--text {
+    text-decoration: none;
+    color: whitesmoke;
+  }
 
   &__text-box {
-    width: 40%;
-    text-align: left;
-    margin-left: 3rem;
-    overflow-wrap: break-word;
+    //? making the text wrap
+    flex: 0 0 40rem;
+    display: inline-flex;
+    margin-top: 3rem;
+    padding: 2rem;
+    flex-direction: column;
+    color: whitesmoke;
+    user-select: none;
   }
   &__text--main {
-    margin-left: -1.5rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 2.5rem;
+      height: 2px;
+      border-radius: 50rem;
+      width: 90%;
+      background-color: black;
+    }
+  }
+  &__text--sub {
+    margin-top: 2rem;
+    padding-left: 1.2rem;
   }
   &__text--sub2 {
     margin-top: 2rem;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
   }
 
   &__image {
@@ -31,6 +64,10 @@
   }
   &__image--box {
     height: 60%;
-    justify-self: flex-end;
+  }
+  &__nav {
+    position: absolute;
+    top: 2.9rem;
+    right: 3rem;
   }
 }

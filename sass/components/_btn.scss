@@ -8,7 +8,7 @@
     font-size: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: rgba(black, 0.5);
     margin: 1.5rem;
     padding: 1.5rem 3rem;
     border-radius: 10rem;
@@ -19,10 +19,10 @@
   }
   &:hover {
     transform: translateY(-0.2rem);
-    box-shadow: 0 0.5rem 2rem rgba(black, 0.2);
+    box-shadow: 0 0.5rem 2rem rgba(#dec5b8, 0.5);
   }
   &--white {
-    background-color: #debab8;
+    background-color: #dec5b8;
     color: black;
   }
 }

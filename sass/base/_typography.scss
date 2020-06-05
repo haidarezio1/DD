@@ -5,16 +5,16 @@
   }
 
   &__text--main {
-    font-family: "Antic didone", sans-serif;
+    font-family: "Antic didone", "helvetica", sans-serif;
     font-size: 15rem;
     text-transform: uppercase;
   }
   &__text--sub {
-    font-family: "simplifica", sans-serif;
+    font-family: "simplifica", "helvetica", sans-serif;
     font-size: 5rem;
     letter-spacing: 1.7rem;
     &2 {
-      font-family: "Raleway", sans-serif;
+      font-family: "Raleway", "helvetica", sans-serif;
       font-weight: 400;
       font-size: 1.5rem;
       line-height: 2rem;
@@ -22,8 +22,8 @@
   }
   &__list {
     list-style: none;
-    &--elem {
-      font-family: "Antic didone", sans-serif;
+    &--elem--link {
+      font-family: "Antic didone", "helvetica", sans-serif;
       font-size: 2rem;
     }
   }
