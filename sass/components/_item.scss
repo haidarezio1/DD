@@ -1,0 +1,12 @@
+.product__item {
+  display: flex;
+  //? toggle grow=1 to make it take 100% of the space it can occupy
+  flex: 0 0 27rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  &--img {
+    width: 60%;
+  }
+}

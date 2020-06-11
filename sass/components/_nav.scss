@@ -8,6 +8,7 @@
   &--elem {
     position: relative;
     margin: 0 1rem;
+    backface-visibility: hidden;
     &::before {
       content: "";
       position: absolute;
