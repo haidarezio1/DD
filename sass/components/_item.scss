@@ -4,12 +4,20 @@
   justify-content: center;
   align-items: center;
   width: 32rem;
+  //!?!I HAVE NO IDEA WHY IT WORKED BUT IT DID !!!!!
   @media (min-width: 1024px) and (max-width: 1440px) {
-    width: 30rem;
+    width: 28rem;
   }
+  @media (max-width: 688px) and (min-width: 425px) {
+    width: 37rem;
+  }
+  @media (max-width: 425px) {
+    width: 35rem;
+  }
+  //!?!I HAVE NO IDEA WHY IT WORKED BUT IT DID !!!!!
   transition: all 0.3s ease-in;
   margin: 0 2rem 2rem;
-  background-color: #e34234;
+  // background-color: #e34234; //!vermillion
   box-shadow: 0 0.6rem 1.2rem #6e211a;
   border-radius: 2.9rem;
   &:hover {
@@ -20,6 +28,15 @@
     object-fit: cover;
     width: 60%;
     margin: 2rem 0 1.4rem;
+    @media (min-width: 1024px) and (max-width: 1440px) {
+      width: 60%;
+    }
+    @media (max-width: 688px) and (min-width: 425px) {
+      width: 70%;
+    }
+    @media (max-width: 425px) {
+      width: 80%;
+    }
   }
   &--text {
     margin-bottom: 1rem;

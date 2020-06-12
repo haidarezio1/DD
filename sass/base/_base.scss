@@ -30,6 +30,12 @@ $bp-smallest: 31.25em; // 500px
 html {
   box-sizing: border-box;
   font-size: 62.5%; //? 16 is default, 10 is (10px/16px)=65.5%
+  @media (max-width: 688px) and (min-width: 425px) {
+    font-size: 30%;
+  }
+  @media (max-width: 425px) {
+    font-size: 20%;
+  }
 }
 
 //@media only screen and (max-width: $bp-large) { font-size: 50%;}
