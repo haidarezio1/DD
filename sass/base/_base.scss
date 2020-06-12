@@ -8,10 +8,12 @@ $bp-smallest: 31.25em; // 500px
 @font-face {
   font-family: "helvetica";
   src: url("../fonts/Hevetica 400.ttf");
-  font-family: "simplifica";
-  src: url("../fonts/SIMPLIFICA Typeface.ttf");
   font-family: "aileron";
   src: url("../fonts/Aileron-Regular.otf");
+}
+@font-face {
+  font-family: "advent";
+  src: url("../fonts/AdventPro-Light.ttf");
 }
 
 * {
