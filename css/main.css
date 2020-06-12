@@ -75,15 +75,44 @@
 
 .product__item {
   display: flex;
-  flex: 0 0 27rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  width: 32rem;
+  transition: all 0.3s ease-in;
+  margin: 0 2rem 2rem;
+  background-color: #e34234;
+  box-shadow: 0 0.6rem 1.2rem #6e211a;
+  border-radius: 2.9rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .product__item {
+    width: 30rem;
+  }
+}
+
+.product__item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 2.5rem 3rem #6e211a;
 }
 
 .product__item--img {
+  object-fit: cover;
   width: 60%;
+  margin: 2rem 0 1.4rem;
+}
+
+.product__item--text {
+  margin-bottom: 1rem;
+}
+
+.product__item--sub {
+  margin-bottom: 1rem;
+}
+
+.product__item--sub1 {
+  margin-bottom: 1.5rem;
 }
 
 @font-face {
@@ -91,6 +120,8 @@
   src: url("../fonts/Hevetica 400.ttf");
   font-family: "simplifica";
   src: url("../fonts/SIMPLIFICA Typeface.ttf");
+  font-family: "aileron";
+  src: url("../fonts/Aileron-Regular.otf");
 }
 
 * {
@@ -143,12 +174,92 @@ html {
 }
 
 .product__item {
-  font-family: "simplifica", sans-serif;
-  font-size: 1.5rem;
+  text-align: center;
 }
 
-.product {
+.product__item--text {
+  font-family: "aileron", "Bellota", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.product__item--sub {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.4rem;
+  font-size: 2rem;
+  color: #3b2d2d;
+}
+
+.product__item--sub1 {
+  font-family: "Bellota", sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  letter-spacing: 0.6rem;
+}
+
+.product__btn--text {
+  font-family: "Raleway", "helvetica", sans-serif;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.product__area {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: space-evenly;
+  justify-items: center;
+  row-gap: 5rem;
+  column-gap: 3rem;
+  padding: 2rem 3rem;
+}
+
+@media (min-width: 1449px) {
+  .product__area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1130px) and (max-width: 1440px) {
+  .product__area {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 7rem;
+  }
+}
+
+@media (max-width: 688px) and (min-width: 425px) {
+  .product__area {
+    column-gap: 1.7rem;
+  }
+}
+
+.product__btn, .product__btn:link, .product__btn:visited {
+  background-color: #dec5b8;
+  padding: 1rem 2.3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 1rem 1.5rem #252525b0;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(0);
+  backface-visibility: hidden;
+  margin-bottom: 2rem;
+}
+
+.product__btn--text {
+  color: #bb694b;
+  transition: all 0.2s ease-in;
+}
+
+.product__btn:hover {
+  box-shadow: 0 0.5rem 1rem #252525b0;
+  background-color: #c0aa9f;
+  transform: translateY(0.2rem);
+}
+
+.product__btn:hover > .product__btn--text {
+  color: #272727;
 }
 
 .header {

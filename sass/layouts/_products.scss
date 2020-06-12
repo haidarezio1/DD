@@ -1,3 +1,53 @@
 .product {
-  display: grid;
+  // background-color: #3b3737;
+  &__area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    @media (min-width: 1449px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 1130px) and (max-width: 1440px) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 7rem;
+    }
+
+    @media (max-width: 688px) and (min-width: 425px) {
+      column-gap: 1.7rem;
+    }
+    justify-content: space-evenly;
+    justify-items: center;
+    row-gap: 5rem;
+    column-gap: 3rem;
+    padding: 2rem 3rem;
+  }
+  &__btn {
+    &,
+    &:link,
+    &:visited {
+      background-color: #dec5b8;
+      padding: 1rem 2.3rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      box-shadow: 0 1rem 1.5rem #252525b0;
+      transition: all 0.2s ease-in-out;
+      transform: translateY(0);
+      backface-visibility: hidden;
+      margin-bottom: 2rem;
+    }
+    &--text {
+      color: #bb694b;
+      transition: all 0.2s ease-in;
+    }
+    &:hover {
+      box-shadow: 0 0.5rem 1rem #252525b0;
+      background-color: #c0aa9f;
+      transform: translateY(0.2rem);
+    }
+    &:hover > &--text {
+      color: #272727;
+    }
+  }
 }
+// @media (max-width: 1024px) and (min-width: 776px) {
+//   grid-template-columns: repeat(auto-fit, 1fr);
+// }

@@ -1,12 +1,33 @@
 .product__item {
   display: flex;
-  //? toggle grow=1 to make it take 100% of the space it can occupy
-  flex: 0 0 27rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  width: 32rem;
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    width: 30rem;
+  }
+  transition: all 0.3s ease-in;
+  margin: 0 2rem 2rem;
+  background-color: #e34234;
+  box-shadow: 0 0.6rem 1.2rem #6e211a;
+  border-radius: 2.9rem;
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 2.5rem 3rem #6e211a;
+  }
   &--img {
+    object-fit: cover;
     width: 60%;
+    margin: 2rem 0 1.4rem;
+  }
+  &--text {
+    margin-bottom: 1rem;
+  }
+  &--sub {
+    margin-bottom: 1rem;
+  }
+  &--sub1 {
+    margin-bottom: 1.5rem;
   }
 }
