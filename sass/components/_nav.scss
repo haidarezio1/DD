@@ -9,6 +9,10 @@
     position: relative;
     margin: 0 1rem;
     backface-visibility: hidden;
+    @media (max-width: 425px) {
+      margin: 1.5rem 0;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -38,6 +42,7 @@
       cursor: pointer;
       transition: all 0.2s;
       border: 2px solid transparent;
+
       &:hover {
         color: black;
       }

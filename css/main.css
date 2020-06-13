@@ -38,6 +38,12 @@
   backface-visibility: hidden;
 }
 
+@media (max-width: 425px) {
+  .header__list--elem {
+    margin: 1.5rem 0;
+  }
+}
+
 .header__list--elem::before {
   content: "";
   position: absolute;
@@ -180,7 +186,7 @@ html {
 
 @media (max-width: 425px) {
   html {
-    font-size: 20%;
+    font-size: 25%;
   }
 }
 
@@ -191,6 +197,12 @@ html {
 .header__logo--text {
   font-family: "Antic didone", sans-serif;
   font-size: 3rem;
+}
+
+@media (max-width: 425px) {
+  .header__logo--text {
+    font-size: 5rem;
+  }
 }
 
 .header__text--main {
@@ -218,7 +230,19 @@ html {
 
 .header__list--elem--link {
   font-family: "Antic didone", "helvetica", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 425px) {
+  .header__list--elem--link {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 682px) {
+  .header__list--elem--link {
+    font-size: 4.5rem;
+  }
 }
 
 .product__item {
@@ -331,15 +355,59 @@ html {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .header {
+    height: 80rem;
+  }
+}
+
+@media (max-width: 652px) {
+  .header {
+    height: 100rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    height: 80rem;
+  }
+}
+
 .header__logo-box {
   position: absolute;
   top: 2.5rem;
   left: 4rem;
 }
 
+@media (max-width: 425px) {
+  .header__logo-box {
+    top: 5rem;
+    left: 6rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 682px) {
+  .header__logo-box {
+    top: 5rem;
+    left: 6rem;
+  }
+}
+
 .header__logo--text {
   text-decoration: none;
   color: whitesmoke;
+}
+
+@media (max-width: 425px) {
+  .header__logo--text {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 682px) {
+  .header__logo--text {
+    font-size: 9rem;
+  }
 }
 
 .header__text-box {
@@ -350,6 +418,12 @@ html {
   flex-direction: column;
   color: whitesmoke;
   user-select: none;
+}
+
+@media (max-width: 425px) {
+  .header__text-box {
+    margin-top: 20rem;
+  }
 }
 
 .header__text--main {
@@ -393,4 +467,25 @@ html {
   position: absolute;
   top: 2.9rem;
   right: 3rem;
+}
+
+@media (min-width: 425px) and (max-width: 682px) {
+  .header__nav {
+    top: 7.5rem;
+    right: 5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__nav {
+    position: static;
+    margin-top: -10rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header__nav {
+    top: 4rem;
+    right: 3rem;
+  }
 }

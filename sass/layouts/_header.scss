@@ -9,6 +9,15 @@
   background-repeat: repeat;
   background-size: contain;
   height: 100vh;
+  @media (max-width: 768px) {
+    height: 80rem;
+  }
+  @media (max-width: 652px) {
+    height: 100rem;
+  }
+  @media (max-width: 425px) {
+    height: 80rem;
+  }
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -19,10 +28,24 @@
     position: absolute;
     top: 2.5rem;
     left: 4rem;
+    @media (max-width: 425px) {
+      top: 5rem;
+      left: 6rem;
+    }
+    @media (min-width: 425px) and(max-width:682px) {
+      top: 5rem;
+      left: 6rem;
+    }
   }
   &__logo--text {
     text-decoration: none;
     color: whitesmoke;
+    @media (max-width: 425px) {
+      font-size: 7rem;
+    }
+    @media (min-width: 425px) and(max-width:682px) {
+      font-size: 9rem;
+    }
   }
 
   &__text-box {
@@ -34,10 +57,12 @@
     flex-direction: column;
     color: whitesmoke;
     user-select: none;
+    @media (max-width: 425px) {
+      margin-top: 20rem;
+    }
   }
   &__text--main {
     position: relative;
-
     &::after {
       content: "";
       position: absolute;
@@ -71,5 +96,17 @@
     position: absolute;
     top: 2.9rem;
     right: 3rem;
+    @media (min-width: 425px) and(max-width:682px) {
+      top: 7.5rem;
+      right: 5rem;
+    }
+    @media (max-width: 425px) {
+      position: static;
+      margin-top: -10rem;
+    }
+    @media (min-width: 1400px) {
+      top: 4rem;
+      right: 3rem;
+    }
   }
 }
