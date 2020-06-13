@@ -99,19 +99,19 @@
 
 @media (max-width: 688px) and (min-width: 425px) {
   .product__item {
-    width: 37rem;
+    width: 39rem;
   }
 }
 
 @media (max-width: 425px) {
   .product__item {
-    width: 34rem;
+    width: 38rem;
   }
 }
 
 @media (max-width: 320px) {
   .product__item {
-    width: 29rem;
+    width: 52rem;
   }
 }
 
@@ -316,8 +316,14 @@ html {
 
 @media (max-width: 425px) {
   .product__area {
-    grid-template-columns: repeat(2, minmax(35rem, 1fr));
+    grid-template-columns: repeat(2, minmax(32rem, 1fr));
     column-gap: 0.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .product__area {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
