@@ -20,9 +20,6 @@
       grid-template-columns: repeat(2, minmax(35rem, 1fr));
       column-gap: 0.2rem;
     }
-    @media (max-width: 320px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
     //!?I HAVE NO IDEA WHY IT WORKED BUT IT DID !!!!!
     justify-content: space-evenly;
     justify-items: center;
