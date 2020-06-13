@@ -109,7 +109,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 352px) {
   .product__item {
     width: 50rem;
   }
@@ -345,7 +345,7 @@ html {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 352px) {
   .product__area {
     grid-template-columns: repeat(1, 1fr);
   }
