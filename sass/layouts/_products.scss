@@ -1,5 +1,5 @@
 .product {
-  // background-color: #3b3737;
+  background-color: #ffebeb;
   &__area {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -8,7 +8,7 @@
       grid-template-columns: repeat(4, 1fr);
     }
     @media (min-width: 1130px) and (max-width: 1440px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(30rem, 1fr));
       column-gap: 7rem;
     }
 
@@ -38,7 +38,7 @@
       padding: 1rem 2.3rem;
       border-radius: 2rem;
       cursor: pointer;
-      box-shadow: 0 1rem 1.5rem #252525b0;
+      box-shadow: 0 0.4rem 0.5rem #252525b0;
       transition: all 0.2s ease-in-out;
       transform: translateY(0);
       backface-visibility: hidden;
@@ -49,7 +49,7 @@
       transition: all 0.2s ease-in;
     }
     &:hover {
-      box-shadow: 0 0.5rem 1rem #252525b0;
+      box-shadow: 0 0.2rem 0.2rem #252525b0;
       background-color: #c0aa9f;
       transform: translateY(0.2rem);
     }
