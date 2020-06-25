@@ -180,8 +180,8 @@
 
 @media (max-width: 425px) {
   .flickity-prev-next-button {
-    width: 1rem;
-    height: 1rem;
+    width: 10px;
+    height: 10px;
   }
 }
 
