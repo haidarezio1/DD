@@ -50,7 +50,7 @@
     //? MEDIA QUERIES
   }
   &--text {
-    margin-top: 3rem;
+    margin-top: 30px;
     margin-bottom: 1rem;
   }
   &--sub {
@@ -58,5 +58,21 @@
   }
   &--sub1 {
     margin-bottom: 1.5rem;
+  }
+}
+.flickity-prev-next-button {
+  width: 4rem;
+  height: 4rem;
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    width: 4rem;
+    height: 4rem;
+  }
+  @media (max-width: 688px) and (min-width: 425px) {
+    width: 3rem;
+    height: 3rem;
+  }
+  @media (max-width: 425px) {
+    width: 1rem;
+    height: 1rem;
   }
 }
