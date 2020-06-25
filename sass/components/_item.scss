@@ -1,5 +1,7 @@
 .main-carousel {
-  width: 60%;
+  width: 25rem;
+  height: 30rem;
+  margin: 2rem 0 1.4rem;
 }
 .carousel-cell {
 }
@@ -36,7 +38,6 @@
   &--img {
     object-fit: cover;
     width: 100%;
-    margin: 2rem 0 1.4rem;
     //? MEDIA QUERIES
     @media (min-width: 1024px) and (max-width: 1440px) {
       width: 100%;
@@ -50,7 +51,7 @@
     //? MEDIA QUERIES
   }
   &--text {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 1rem;
   }
   &--sub {
@@ -75,4 +76,7 @@
     width: 10px;
     height: 10px;
   }
+}
+.flickity-page-dots {
+  bottom: -55px;
 }

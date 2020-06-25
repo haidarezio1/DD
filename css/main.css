@@ -80,7 +80,9 @@
 }
 
 .main-carousel {
-  width: 60%;
+  width: 25rem;
+  height: 30rem;
+  margin: 2rem 0 1.4rem;
 }
 
 .product__item {
@@ -125,7 +127,6 @@
 .product__item--img {
   object-fit: cover;
   width: 100%;
-  margin: 2rem 0 1.4rem;
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -147,7 +148,7 @@
 }
 
 .product__item--text {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 1rem;
 }
 
@@ -183,6 +184,10 @@
     width: 10px;
     height: 10px;
   }
+}
+
+.flickity-page-dots {
+  bottom: -55px;
 }
 
 @font-face {
