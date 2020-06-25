@@ -1,3 +1,8 @@
+.main-carousel {
+  width: 60%;
+}
+.carousel-cell {
+}
 .product__item {
   display: flex;
   flex-direction: column;
@@ -30,21 +35,22 @@
   }
   &--img {
     object-fit: cover;
-    width: 60%;
+    width: 100%;
     margin: 2rem 0 1.4rem;
     //? MEDIA QUERIES
     @media (min-width: 1024px) and (max-width: 1440px) {
-      width: 60%;
+      width: 100%;
     }
     @media (max-width: 688px) and (min-width: 425px) {
-      width: 70%;
+      width: 110%;
     }
     @media (max-width: 425px) {
-      width: 80%;
+      width: 120%;
     }
     //? MEDIA QUERIES
   }
   &--text {
+    margin-top: 3rem;
     margin-bottom: 1rem;
   }
   &--sub {
