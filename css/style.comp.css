@@ -314,13 +314,12 @@ html {
         column-gap: 7rem; } }
     @media (max-width: 688px) and (min-width: 425px) {
       .product__area {
-        grid-template-columns: repeat(2, 30rem);
+        grid-template-columns: repeat(2, minmax(35rem, 1fr));
         column-gap: 0;
         width: 100vw; } }
     @media (max-width: 425px) {
       .product__area {
-        grid-template-columns: repeat(2, minmax(27rem, 1fr));
-        column-gap: 0.2rem;
+        grid-template-columns: repeat(1, minmax(40rem, 1fr));
         width: 100vw; } }
     @media (max-width: 353px) {
       .product__area {
