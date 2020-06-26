@@ -360,6 +360,88 @@ html {
   }
 }
 
+.footer {
+  font-family: "Antic didone", sans-serif;
+  text-align: center;
+  user-select: none;
+}
+
+.footer__text {
+  padding-top: 5rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.691);
+}
+
+.footer__logo--text {
+  display: inline-block;
+  text-decoration: none;
+  margin: 20px 0;
+  color: #2f2f2f;
+  font-size: 6rem;
+}
+
+@media (max-width: 425px) {
+  .footer__logo--text {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 664px) {
+  .footer__logo--text {
+    font-size: 10rem;
+  }
+}
+
+.footer--link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #070707;
+  font-size: 3rem;
+}
+
+@media (max-width: 425px) {
+  .footer--link {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 664px) {
+  .footer--link {
+    font-size: 7rem;
+  }
+}
+
+.footer__para--text {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 425px) {
+  .footer__para--text {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 664px) {
+  .footer__para--text {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .T {
+    font-size: 10rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 664px) {
+  .T {
+    font-size: 10rem;
+  }
+}
+
 .product {
   background-color: #ffebeb;
 }
@@ -607,6 +689,12 @@ html {
   backface-visibility: hidden;
 }
 
+@media (max-width: 878px) {
+  .hero__pics--first {
+    margin-bottom: 30px;
+  }
+}
+
 .hero__pics--1 {
   height: 400px;
   width: 530px;
@@ -655,4 +743,155 @@ img:not(:last-child) {
     height: 80vh;
     width: 100vw;
   }
+}
+
+.footer {
+  background-color: #ffffff;
+  height: 50rem;
+}
+
+.footer__middle {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .footer__middle {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    height: auto;
+  }
+}
+
+.footer__nav {
+  border-top: 1px solid black;
+  padding-top: 1.2rem;
+  display: inline-block;
+}
+
+@media (max-width: 1024px) {
+  .footer__nav {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.footer__social {
+  margin-left: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1024px) {
+  .footer__social {
+    order: -1;
+    width: 50rem;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 664px) {
+  .footer__social {
+    width: 80rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.footer__social--icon:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__social--icon {
+  text-decoration: none;
+  color: #000;
+  text-shadow: none;
+  position: relative;
+}
+
+.footer__social--icon--I > .fa-instagram {
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__social--icon--I:hover > .fa-instagram {
+  color: transparent;
+  background: #f09433;
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer__list--item {
+  display: inline-block;
+}
+
+.footer__list--item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.footer--link {
+  transition: all 0.2s ease-in;
+}
+
+.footer--link:hover {
+  font-size: 3.5rem;
+}
+
+.footer__para {
+  width: 33.3333%;
+  border-top: 1px solid black;
+  padding-top: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .footer__para {
+    order: -2;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer__para {
+    width: 70%;
+  }
+}
+
+.footer__end {
+  margin-top: 50px;
+}
+
+.footer__end > p {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.fa-twitter {
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-twitter:hover {
+  color: transparent;
+  color: #55acee;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fa-facebook {
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-facebook:hover {
+  color: #1977f3;
+  background-clip: text;
+  -webkit-background-clip: text;
 }

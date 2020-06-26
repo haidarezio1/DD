@@ -17,6 +17,9 @@
       background-color: #000;
       overflow: hidden;
       backface-visibility: hidden;
+      @media (max-width: 878px) {
+        margin-bottom: 30px;
+      }
     }
     &--1 {
       height: 400px;
