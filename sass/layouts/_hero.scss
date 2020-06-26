@@ -1,0 +1,39 @@
+.hero {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  &__video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  &__pics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    &--1 {
+      height: 400px;
+      width: 530px;
+      @media (max-width: 768px) {
+        max-width: 530px;
+        object-fit: cover;
+      }
+    }
+    &--2 {
+      height: 500px;
+      width: 350px;
+      @media (max-width: 768px) {
+      }
+    }
+  }
+}
+img:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.video-js {
+  height: 100vh;
+  @media (max-width: 740px) {
+    height: 80vh;
+    width: 100vw;
+  }
+}

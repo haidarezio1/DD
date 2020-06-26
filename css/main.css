@@ -14,6 +14,22 @@
   backface-visibility: hidden;
 }
 
+@media (max-width: 688px) and (min-width: 425px) {
+  .btn, .btn:link, .btn:visited {
+    font-size: 4rem;
+    padding: 2rem 4rem;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .btn, .btn:link, .btn:visited {
+    font-size: 3rem;
+    padding: 1.4rem 4rem;
+    margin-top: 4rem;
+  }
+}
+
 .btn:hover {
   transform: translateY(-0.2rem);
   box-shadow: 0 0.5rem 2rem rgba(222, 197, 184, 0.5);
@@ -563,5 +579,55 @@ html {
   .header__nav {
     top: 4rem;
     right: 3rem;
+  }
+}
+
+.hero {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.hero__video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.hero__pics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero__pics--1 {
+  height: 400px;
+  width: 530px;
+}
+
+@media (max-width: 768px) {
+  .hero__pics--1 {
+    max-width: 530px;
+    object-fit: cover;
+  }
+}
+
+.hero__pics--2 {
+  height: 500px;
+  width: 350px;
+}
+
+img:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.video-js {
+  height: 100vh;
+}
+
+@media (max-width: 740px) {
+  .video-js {
+    height: 80vh;
+    width: 100vw;
   }
 }

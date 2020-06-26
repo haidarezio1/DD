@@ -2,7 +2,7 @@
   &,
   &:link,
   &:visited {
-    // ?  always when using an ancho tag use inline-block
+    // ?  always when using an anchor tag use inline-block
     display: inline-block;
     font-family: "Lato";
     font-size: 1.5rem;
@@ -16,6 +16,16 @@
     cursor: pointer;
     transition: all 0.2s;
     backface-visibility: hidden;
+    @media (max-width: 688px) and (min-width: 425px) {
+      font-size: 4rem;
+      padding: 2rem 4rem;
+      margin-top: 4rem;
+    }
+    @media (max-width: 425px) {
+      font-size: 3rem;
+      padding: 1.4rem 4rem;
+      margin-top: 4rem;
+    }
   }
   &:hover {
     transform: translateY(-0.2rem);

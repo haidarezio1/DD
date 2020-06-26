@@ -7,27 +7,11 @@
       href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lato:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="public/img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="public/img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="public/img/favicon-16x16.png"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="public/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="public/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="public/img/favicon-16x16.png" />
+    <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
     <link rel="manifest" href="../DD/public/img/site.webmanifest" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Elior</title>
@@ -49,26 +33,37 @@
       <div class="header__nav">
         <ul class="header__list">
           <li class="header__list--elem">
-            <a href="index.html" class="header__list--elem--link"
-              ><b>Home</b>
-            </a>
+            <a href="index.html" class="header__list--elem--link"><b>Home</b> </a>
           </li>
           <li class="header__list--elem">
-            <a href="products.html" class="header__list--elem--link"
-              ><b>Products</b></a
-            >
+            <a href="products.html" class="header__list--elem--link"><b>Products</b></a>
           </li>
           <li class="header__list--elem">
-            <a href="#aboutus" class="header__list--elem--link"
-              ><b>About Us</b></a
-            >
+            <a href="#aboutus" class="header__list--elem--link"><b>About Us</b></a>
           </li>
         </ul>
       </div>
       <div></div>
     </header>
     <main>
-      <section class="hero" id="hero"></section>
+      <section class="hero" id="hero">
+        <div class="hero__video">
+          <!-- //? you can change the width and height from here  -->
+          <video id="my-video" class="video-js" controls preload="auto" poster="public/img/20.jpeg" data-setup="{}">
+            <source src="public/video/1x1.mp4" type="video/mp4" />
+            <!-- //! Supplimentray -->
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+            <!-- //! Supplimentray -->
+          </video>
+        </div>
+        <div class="hero__pics">
+          <img class="hero__pics--1" src="public/img/22.jpeg" alt="" />
+          <img class="hero__pics--2" src="public/img/44.jpeg" alt="" />
+        </div>
+      </section>
     </main>
     <footer class="aboutus" id="#aboutus">
       <div class="footer__start"></div>
@@ -79,5 +74,6 @@
       </div>
       <div class="footer__end"></div>
     </footer>
+    <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
   </body>
 </html>
