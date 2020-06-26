@@ -682,7 +682,7 @@ html {
   padding-bottom: 5rem;
 }
 
-@media (max-width: 530px) {
+@media (max-width: 922px) {
   .hero__pics {
     flex-direction: column;
   }
@@ -697,6 +697,12 @@ html {
 @media (max-width: 878px) {
   .hero__pics--first {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 922px) {
+  .hero__pics--first {
+    margin-bottom: 20px;
   }
 }
 
