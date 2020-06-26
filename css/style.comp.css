@@ -309,15 +309,15 @@ html {
         grid-template-columns: repeat(4, 1fr); } }
     @media (min-width: 1130px) and (max-width: 1440px) {
       .product__area {
-        grid-template-columns: repeat(3, minmax(auto-fit, 1fr));
+        grid-template-columns: repeat(3, minmax(30rem, 1fr));
         column-gap: 7rem; } }
     @media (max-width: 688px) and (min-width: 425px) {
       .product__area {
-        grid-template-columns: repeat(2, minmax(auto-fit, 1fr));
+        grid-template-columns: repeat(2, minmax(40rem, 1fr));
         column-gap: 0; } }
     @media (max-width: 425px) {
       .product__area {
-        grid-template-columns: repeat(2, minmax(auto-fit, 1fr));
+        grid-template-columns: repeat(2, minmax(32rem, 1fr));
         column-gap: 0.2rem; } }
     @media (max-width: 353px) {
       .product__area {
