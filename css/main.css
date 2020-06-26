@@ -862,6 +862,12 @@ img:not(:last-child) {
   }
 }
 
+.video-js .vjs-big-play-button {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .footer {
   background-color: #ffffff;
   height: 50rem;
