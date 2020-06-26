@@ -132,6 +132,11 @@
 .flickity-page-dots {
   display: none; }
 
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden; }
+
 @font-face {
   font-family: "helvetica";
   src: url("../fonts/Hevetica 400.ttf");
@@ -164,12 +169,6 @@ html {
   @media (max-width: 425px) {
     html {
       font-size: 25%; } }
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; }
 
 .header {
   text-align: center; }
