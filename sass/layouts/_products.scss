@@ -2,6 +2,7 @@
   background-color: #ffebeb;
   &__area {
     display: grid;
+    width: 100vw;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     //!?I HAVE NO IDEA WHY IT WORKED BUT IT DID !!!!!
     @media (min-width: 1449px) {
@@ -15,10 +16,12 @@
     @media (max-width: 688px) and (min-width: 425px) {
       grid-template-columns: repeat(2, minmax(40rem, 1fr));
       column-gap: 0;
+      width: 100vw;
     }
     @media (max-width: 425px) {
       grid-template-columns: repeat(2, minmax(32rem, 1fr));
       column-gap: 0.2rem;
+      width: 100vw;
     }
     @media (max-width: 353px) {
       grid-template-columns: repeat(1, 1fr);

@@ -220,6 +220,7 @@
 }
 
 html {
+  width: 100vw;
   overflow-x: hidden;
   box-sizing: border-box;
   font-size: 62.5%;
@@ -450,6 +451,7 @@ html {
 
 .product__area {
   display: grid;
+  width: 100vw;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   justify-content: space-evenly;
   justify-items: center;
@@ -474,6 +476,7 @@ html {
   .product__area {
     grid-template-columns: repeat(2, minmax(40rem, 1fr));
     column-gap: 0;
+    width: 100vw;
   }
 }
 
@@ -481,6 +484,7 @@ html {
   .product__area {
     grid-template-columns: repeat(2, minmax(32rem, 1fr));
     column-gap: 0.2rem;
+    width: 100vw;
   }
 }
 
