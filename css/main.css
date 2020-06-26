@@ -583,11 +583,11 @@ html {
 }
 
 .hero {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  background-color: #ffebeb;
 }
 
 .hero__video {
+  padding-top: 5rem;
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
@@ -598,11 +598,21 @@ html {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
+
+.hero__pics--first {
+  background-color: #000;
+  overflow: hidden;
+  backface-visibility: hidden;
 }
 
 .hero__pics--1 {
   height: 400px;
   width: 530px;
+  opacity: 0.7;
+  transform: scale(1.15);
+  transition: all 0.4s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -612,9 +622,24 @@ html {
   }
 }
 
+.hero__pics--1:hover {
+  opacity: 1;
+  transform: scale(1.04);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.7);
+}
+
 .hero__pics--2 {
   height: 500px;
   width: 350px;
+  opacity: 0.7;
+  transform: scale(1.15);
+  transition: all 0.4s ease-in-out;
+}
+
+.hero__pics--2:hover {
+  opacity: 1;
+  transform: scale(1.04);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.7);
 }
 
 img:not(:last-child) {
