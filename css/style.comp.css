@@ -302,8 +302,7 @@ html {
     justify-content: space-evenly;
     justify-items: center;
     row-gap: 5rem;
-    column-gap: 3rem;
-    padding: 2rem 3rem; }
+    column-gap: 3rem; }
     @media (min-width: 1449px) {
       .product__area {
         grid-template-columns: repeat(4, 1fr); } }

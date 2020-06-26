@@ -455,7 +455,6 @@ html {
   justify-items: center;
   row-gap: 5rem;
   column-gap: 3rem;
-  padding: 2rem 3rem;
 }
 
 @media (min-width: 1449px) {
