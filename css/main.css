@@ -679,8 +679,13 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   padding-bottom: 5rem;
+}
+
+@media (max-width: 530px) {
+  .hero__pics {
+    flex-direction: column;
+  }
 }
 
 .hero__pics--first {
@@ -706,7 +711,7 @@ html {
 @media (max-width: 768px) {
   .hero__pics--1 {
     max-width: 530px;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
