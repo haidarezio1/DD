@@ -218,7 +218,6 @@
 * {
   margin: 0;
   padding: 0;
-  width: 100vw !important;
 }
 
 *,
@@ -237,14 +236,12 @@ html {
 @media (max-width: 688px) and (min-width: 425px) {
   html {
     font-size: 30%;
-    width: 100vw !important;
   }
 }
 
 @media (max-width: 425px) {
   html {
     font-size: 25%;
-    width: 100vw !important;
   }
 }
 
@@ -680,7 +677,6 @@ html {
 }
 
 .hero {
-  width: 100vw;
   background-color: #ffebeb;
 }
 
