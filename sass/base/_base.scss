@@ -32,8 +32,6 @@ $bp-smallest: 31.25em; // 500px
 }
 
 html {
-  width: 100%;
-  overflow-x: hidden !important;
   box-sizing: border-box;
   font-size: 62.5%; //? 16 is default, 10 is (10px/16px)=65.5%
   @media (max-width: 688px) and (min-width: 425px) {
@@ -41,8 +39,6 @@ html {
   }
   @media (max-width: 425px) {
     font-size: 25%;
-    backface-visibility: hidden;
-    user-zoom: fixed;
   }
 }
 
