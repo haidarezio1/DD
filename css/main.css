@@ -227,6 +227,8 @@
 }
 
 html {
+  width: 100%;
+  overflow-x: hidden !important;
   box-sizing: border-box;
   font-size: 62.5%;
 }
@@ -240,7 +242,6 @@ html {
 @media (max-width: 425px) {
   html {
     font-size: 25%;
-    overflow-x: hidden !important;
     backface-visibility: hidden;
     user-zoom: fixed;
   }
