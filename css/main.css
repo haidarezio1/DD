@@ -228,7 +228,6 @@
 
 html {
   width: 100vw !important;
-  overflow-x: hidden;
   box-sizing: border-box;
   font-size: 62.5%;
 }
