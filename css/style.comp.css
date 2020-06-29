@@ -160,8 +160,6 @@
   box-sizing: inherit; }
 
 html {
-  width: 100vw;
-  overflow-x: hidden;
   box-sizing: border-box;
   font-size: 62.5%; }
   @media (max-width: 688px) and (min-width: 425px) {
