@@ -1,0 +1,45 @@
+//! screen vars
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+@font-face {
+  font-family: "helvetica";
+  src: url("../fonts/Hevetica 400.ttf");
+  font-family: "aileron";
+  src: url("../fonts/Aileron-Regular.otf");
+}
+@font-face {
+  font-family: "advent";
+  src: url("../fonts/AdventPro-Light.ttf");
+}
+@font-face {
+  font-family: "simplifica";
+  src: url("../fonts/SIMPLIFICA.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //? 16 is default, 10 is (10px/16px)=65.5%
+  @media (max-width: 688px) and (min-width: 425px) {
+    font-size: 30%;
+  }
+  @media (max-width: 425px) {
+    font-size: 25%;
+  }
+}
+
+//@media only screen and (max-width: $bp-large) { font-size: 50%;}

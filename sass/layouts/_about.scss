@@ -1,0 +1,119 @@
+.footer {
+  &__middle {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-evenly;
+      height: auto;
+    }
+  }
+  background-color: #ffffff;
+  height: 50rem;
+  &__nav {
+    border-top: 1px solid rgb(0, 0, 0);
+    padding-top: 1.2rem;
+    //! we did inline block here to get the line as much as the elems
+    display: inline-block;
+    @media (max-width: 1024px) {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 425px) {
+    }
+  }
+  &__social {
+    margin-left: 5rem;
+    @media (max-width: 1024px) {
+      order: -1;
+      width: 50rem;
+      margin-left: 0;
+    }
+    @media (min-width: 425px) and (max-width: 664px) {
+      width: 80rem;
+      margin-bottom: 4rem;
+    }
+    display: flex;
+    justify-content: space-evenly;
+    &--icon:not(:last-child) {
+      margin-right: 30px;
+    }
+    &--icon {
+      text-decoration: none;
+      color: #000;
+      text-shadow: none;
+      position: relative;
+
+      &--I > .fa-instagram {
+        transition: all 0.2s ease-in-out;
+      }
+      &--I:hover > .fa-instagram {
+        color: transparent;
+        background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+    }
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    &--item {
+      display: inline-block;
+    }
+    &--item:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+  &--link {
+    transition: all 0.2s ease-in;
+    &:hover {
+      font-size: 3.5rem;
+    }
+  }
+  &__para {
+    width: 33.3333%;
+    @media (max-width: 768px) {
+      order: -2;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 425px) {
+      width: 70%;
+    }
+    border-top: 1px solid rgb(0, 0, 0);
+    padding-top: 1.2rem;
+  }
+  &__end {
+    margin-top: 50px;
+  }
+  &__end > p {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+}
+.fa-twitter {
+  transition: all 0.2s ease-in-out;
+}
+.fa-twitter:hover {
+  color: transparent;
+  color: #55acee;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.fa-facebook {
+  transition: all 0.2s ease-in-out;
+}
+.fa-facebook:hover {
+  color: #1977f3;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

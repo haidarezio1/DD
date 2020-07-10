@@ -1,0 +1,107 @@
+.header {
+  background-image: linear-gradient(to right bottom, rgba(black, 0.8), rgba(black, 0.8)), url(../public/img/101.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: contain;
+  height: 100vh;
+  @media (max-width: 768px) {
+    height: 80rem;
+  }
+  @media (max-width: 652px) {
+    height: 100rem;
+  }
+  @media (max-width: 425px) {
+    height: 80rem;
+  }
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__logo-box {
+    position: absolute;
+    top: 2.5rem;
+    left: 4rem;
+    @media (max-width: 425px) {
+      top: 5rem;
+      left: 6rem;
+    }
+    @media (min-width: 425px) and(max-width:682px) {
+      top: 5rem;
+      left: 6rem;
+    }
+  }
+  &__logo--text {
+    text-decoration: none;
+    color: whitesmoke;
+    @media (max-width: 425px) {
+      font-size: 7rem;
+    }
+    @media (min-width: 425px) and(max-width:682px) {
+      font-size: 9rem;
+    }
+  }
+
+  &__text-box {
+    //? making the text wrap
+    flex: 0 0 40rem;
+    display: inline-flex;
+    margin-top: 3rem;
+    padding: 2rem;
+    flex-direction: column;
+    color: whitesmoke;
+    user-select: none;
+    @media (max-width: 425px) {
+      margin-top: 20rem;
+    }
+  }
+  &__text--main {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 2.5rem;
+      height: 2px;
+      border-radius: 50rem;
+      width: 90%;
+      background-color: black;
+    }
+  }
+  &__text--sub {
+    margin-top: 2rem;
+    padding-left: 1.2rem;
+  }
+  &__text--sub2 {
+    margin-top: 2rem;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    height: 100%;
+  }
+  &__image--box {
+    height: 60%;
+  }
+  &__nav {
+    position: absolute;
+    top: 2.9rem;
+    right: 3rem;
+    @media (min-width: 425px) and(max-width:682px) {
+      top: 7.5rem;
+      right: 5rem;
+    }
+    @media (max-width: 425px) {
+      position: static;
+      margin-top: -10rem;
+    }
+    @media (min-width: 1400px) {
+      top: 4rem;
+      right: 3rem;
+    }
+  }
+}

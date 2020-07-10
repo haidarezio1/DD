@@ -1,0 +1,73 @@
+.main-carousel {
+  width: 25rem;
+  height: 30rem;
+  margin: 2rem 0 1.4rem;
+  @media (max-width: 425px) {
+    width: 38rem;
+    height: 46rem;
+  }
+}
+.carousel-cell {
+  width: 100%;
+}
+.product__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32rem;
+  //!?!I HAVE NO IDEA WHY IT WORKED BUT IT DID !!!!!
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    width: 35rem;
+  }
+  @media (max-width: 688px) and (min-width: 425px) {
+    width: 39rem;
+  }
+  @media (max-width: 425px) {
+    width: 38rem;
+  }
+  @media (max-width: 353px) {
+    width: 50rem;
+  }
+
+  //!?!I HAVE NO IDEA WHY IT WORKED BUT IT DID !!!
+  transition: all 0.3s ease-in;
+  margin: 0 0.5rem 2rem;
+
+  border-radius: 2.9rem;
+  &:hover {
+    transform: scale(1.04);
+  }
+  &--img {
+    width: 100%;
+  }
+  &--text {
+    margin: 4rem 0 1rem;
+  }
+  &--sub {
+    margin-bottom: 1rem;
+  }
+  &--sub1 {
+    margin-bottom: 1.5rem;
+  }
+}
+.flickity-prev-next-button {
+  width: 4rem;
+  height: 4rem;
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    width: 4rem;
+    height: 4rem;
+  }
+  @media (max-width: 688px) and (min-width: 425px) {
+    width: 3rem;
+    height: 3rem;
+  }
+  @media (max-width: 425px) {
+    width: 15px;
+    height: 15px;
+    top: 50%;
+  }
+}
+.flickity-page-dots {
+  display: none;
+}

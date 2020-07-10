@@ -1,0 +1,145 @@
+.header {
+  text-align: center;
+  &__logo--text {
+    font-family: "Antic didone", sans-serif;
+    font-size: 3rem;
+    @media (max-width: 425px) {
+      font-size: 5rem;
+    }
+  }
+
+  &__text--main {
+    font-family: "Antic didone", "helvetica", sans-serif;
+    font-size: 15rem;
+    text-transform: uppercase;
+  }
+  &__text--sub {
+    font-family: "advent", "helvetica", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1.7rem;
+    &2 {
+      font-family: "Raleway", "helvetica", sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+  &__list {
+    list-style: none;
+    &--elem--link {
+      @media (max-width: 425px) {
+        font-size: 3rem;
+      }
+      @media (min-width: 425px) and(max-width:682px) {
+        font-size: 4.5rem;
+      }
+      font-family: "Antic didone", "helvetica", sans-serif;
+      font-size: 2.5rem;
+    }
+  }
+}
+.product__item {
+  text-align: center;
+
+  &--text {
+    font-family: "aileron", "Bellota", sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    @media (max-width: 425px) {
+      font-size: 4rem;
+    }
+  }
+  &--sub {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.4rem;
+
+    font-size: 2rem;
+    color: rgb(59, 45, 45);
+    @media (max-width: 425px) {
+      font-size: 3.5rem;
+    }
+  }
+  &--sub1 {
+    font-family: "Bellota", sans-serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    letter-spacing: 0.6rem;
+    @media (max-width: 425px) {
+      font-size: 4.6rem;
+    }
+  }
+}
+.product__btn--text {
+  font-family: "Raleway", "helvetica", sans-serif;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: black;
+  @media (max-width: 688px) and (min-width: 425px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 425px) {
+    font-size: 3.5rem;
+  }
+  @media (max-width: 353px) {
+    font-size: 3.5rem;
+  }
+}
+.footer {
+  font-family: "Antic didone", sans-serif;
+  text-align: center;
+
+  user-select: none;
+  &__text {
+    padding-top: 5rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.691);
+  }
+  &__logo--text {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 0;
+    color: #2f2f2f;
+    font-size: 6rem;
+    @media (max-width: 425px) {
+      font-size: 8rem;
+    }
+    @media (min-width: 425px) and (max-width: 664px) {
+      font-size: 10rem;
+    }
+  }
+  &--link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #070707;
+    font-size: 3rem;
+    @media (max-width: 425px) {
+      font-size: 5rem;
+    }
+    @media (min-width: 425px) and (max-width: 664px) {
+      font-size: 7rem;
+    }
+  }
+  &__para--text {
+    text-align: center;
+    font-size: 2rem;
+    @media (max-width: 425px) {
+      font-size: 4rem;
+    }
+    @media (min-width: 425px) and (max-width: 664px) {
+      font-size: 3.4rem;
+    }
+  }
+}
+.T {
+  @media (max-width: 425px) {
+    font-size: 10rem;
+  }
+  @media (min-width: 425px) and (max-width: 664px) {
+    font-size: 10rem;
+  }
+}
